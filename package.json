@@ -1,0 +1,33 @@
+{
+  "name": "@scuton/license-gen",
+  "version": "1.0.0",
+  "description": "Generate LICENSE files from your terminal. MIT, Apache-2.0, GPL-3.0, BSD, ISC and more.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "license-gen": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "dev": "tsup --watch"
+  },
+  "keywords": ["license", "generator", "cli", "mit", "apache", "gpl", "bsd", "isc"],
+  "author": "Scuton Technology",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "tsup": "^8.0.0",
+    "vitest": "^2.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
